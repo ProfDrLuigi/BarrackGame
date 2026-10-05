@@ -259,7 +259,6 @@ h3 { font-size: 1.25rem; }
 }
 .site-footer p { margin: 0; }
 .site-footer a { color: var(--green); text-decoration: none; font-weight: 800; }
-.footer-links { display: flex; flex-wrap: wrap; gap: .75rem 1.4rem; justify-content: flex-end; }
 
 @media (max-width: 940px) {
   .site-header { align-items: flex-start; }
@@ -292,7 +291,6 @@ h3 { font-size: 1.25rem; }
   .gallery-card img { height: 380px; }
   .credit-grid dl div { grid-template-columns: 1fr; gap: .15rem; }
   .site-footer { flex-direction: column; }
-  .footer-links { justify-content: flex-start; }
 }
 
 @media (prefers-reduced-motion: reduce) {

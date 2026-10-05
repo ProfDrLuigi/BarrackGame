@@ -37,8 +37,7 @@
         <h1>Barrack lives again.</h1>
         <p class="lede">A modern port and reimplementation of the classic <strong>Barrack</strong> game, rebuilt from its original Macintosh resources, PowerPC behavior and timing while preserving the peculiar mix of reflex, strategy and controlled chaos that made it Barrack.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="https://github.com/ProfDrLuigi/BarrackGame/releases/latest" target="_blank" rel="noopener noreferrer">Download latest release</a>
-          <a class="button button-secondary" href="#game">Enter the playfield</a>
+          <a class="button button-primary" href="#game">Enter the playfield</a>
           <a class="button button-secondary" href="#rebuild">How it was rebuilt</a>
         </div>
         <dl class="hero-facts" aria-label="Project facts">
@@ -212,10 +211,7 @@
 
   <footer class="site-footer">
     <p><strong>Barrack</strong> · Modern port and reimplementation of the classic Macintosh game.</p>
-    <div class="footer-links">
-      <a href="https://github.com/ProfDrLuigi/BarrackGame/releases/latest" target="_blank" rel="noopener noreferrer">Download latest release</a>
-      <a href="#top">Back to top ↑</a>
-    </div>
+    <a href="#top">Back to top ↑</a>
   </footer>
 </body>
 </html>
