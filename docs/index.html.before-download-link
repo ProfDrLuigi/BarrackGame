@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#090b0c">
-  <meta name="description" content="Barrack is a modern macOS reimplementation of the classic 1996 Macintosh game, with PlayStation, Xbox and configurable generic gamepad support.">
+  <meta name="description" content="Barrack is a modern macOS port and reimplementation of the classic 1996 Macintosh action-strategy game, reconstructed from the original resources and behavior.">
   <meta property="og:title" content="Barrack — Modern macOS Reimplementation">
-  <meta property="og:description" content="The 1996 Macintosh classic returns on modern macOS, now with configurable PlayStation, Xbox and generic controller support.">
+  <meta property="og:description" content="A preservation-minded reimplementation of the 1996 Macintosh classic.">
   <meta property="og:image" content="assets/barrack-hero.jpg">
   <meta property="og:type" content="website">
   <title>Barrack — Modern macOS Reimplementation</title>
@@ -23,7 +23,6 @@
     </a>
     <nav class="site-nav" aria-label="Primary navigation">
       <a href="#game">The game</a>
-      <a href="#controllers">Controllers</a>
       <a href="#history">History</a>
       <a href="#rebuild">Reimplementation</a>
       <a href="#gallery">Gallery</a>
@@ -38,8 +37,7 @@
         <h1>Barrack lives again.</h1>
         <p class="lede">A modern port and reimplementation of the classic <strong>Barrack</strong> game, rebuilt from its original Macintosh resources, PowerPC behavior and timing while preserving the peculiar mix of reflex, strategy and controlled chaos that made it Barrack.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="https://github.com/ProfDrLuigi/BarrackGame/releases/latest" target="_blank" rel="noopener noreferrer">Download latest release</a>
-          <a class="button button-secondary" href="#game">Enter the playfield</a>
+          <a class="button button-primary" href="#game">Enter the playfield</a>
           <a class="button button-secondary" href="#rebuild">How it was rebuilt</a>
         </div>
         <dl class="hero-facts" aria-label="Project facts">
@@ -107,64 +105,6 @@
           <span>Multiplier</span>
         </div>
       </div>
-    </section>
-
-    <section class="section section-controllers" id="controllers" aria-labelledby="controllers-heading">
-      <div class="controller-intro">
-        <div>
-          <p class="eyebrow">Modern controls, classic Barrack</p>
-          <h2 id="controllers-heading">Grab a controller.<br>Keep the challenge.</h2>
-          <p>Play Barrack with a supported PlayStation, Xbox or third-party gamepad. Move the barrier gun with the left stick or D-pad, fire with a button or trigger and switch weapons without letting go. Mouse and keyboard remain fully supported.</p>
-        </div>
-        <div class="controller-support" aria-label="Controller profiles">
-          <span class="controller-support-label">Three independent profiles</span>
-          <div class="controller-profile-list">
-            <div><span class="profile-indicator profile-playstation" aria-hidden="true"></span><strong>PlayStation</strong><small>DualShock / DualSense</small></div>
-            <div><span class="profile-indicator profile-xbox" aria-hidden="true"></span><strong>Xbox</strong><small>Xbox controllers</small></div>
-            <div><span class="profile-indicator profile-generic" aria-hidden="true"></span><strong>Generic</strong><small>Other compatible gamepads</small></div>
-          </div>
-          <p>Connect over USB or Bluetooth. Barrack automatically selects the matching profile when macOS recognizes the controller.</p>
-        </div>
-      </div>
-
-      <div class="controller-guide">
-        <div class="controller-mappings">
-          <div class="controller-guide-heading">
-            <h3>Default button layout</h3>
-            <p>All three profiles can be customized independently in the game.</p>
-          </div>
-          <div class="controller-table-scroll" tabindex="0" role="region" aria-label="Controller button mapping table, scrollable horizontally">
-            <table class="controller-table">
-              <thead>
-                <tr><th scope="col">Action</th><th scope="col">PlayStation</th><th scope="col">Xbox</th><th scope="col">Generic</th></tr>
-              </thead>
-              <tbody>
-                <tr><th scope="row">Move the shooter</th><td>Left stick / D-pad</td><td>Left stick / D-pad</td><td>Left stick / D-pad</td></tr>
-                <tr><th scope="row">Fire / use magnet</th><td><kbd>Cross</kbd> or <kbd>R2</kbd></td><td><kbd>A</kbd> or <kbd>RT</kbd></td><td><kbd>Button A</kbd> or <kbd>Right Trigger</kbd></td></tr>
-                <tr><th scope="row">Rotate barrier</th><td><kbd>Square</kbd></td><td><kbd>X</kbd></td><td><kbd>Button X</kbd></td></tr>
-                <tr><th scope="row">Arm / disarm laser</th><td><kbd>L2</kbd></td><td><kbd>LT</kbd></td><td><kbd>Left Trigger</kbd></td></tr>
-                <tr><th scope="row">Arm / disarm magnet</th><td><kbd>L1</kbd></td><td><kbd>LB</kbd></td><td><kbd>Left Shoulder</kbd></td></tr>
-                <tr><th scope="row">Pause / resume</th><td><kbd>Options</kbd></td><td><kbd>Menu</kbd></td><td><kbd>Menu</kbd></td></tr>
-                <tr><th scope="row">Menu: confirm</th><td><kbd>Cross</kbd></td><td><kbd>A</kbd></td><td><kbd>Button A</kbd></td></tr>
-                <tr><th scope="row">Menu: back</th><td><kbd>Circle</kbd></td><td><kbd>B</kbd></td><td><kbd>Button B</kbd></td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <aside class="controller-customize" aria-labelledby="controller-customize-title">
-          <p class="eyebrow">Your controller, your layout</p>
-          <h3 id="controller-customize-title">Remap every gameplay button.</h3>
-          <p>Open <strong>Setup → Controller…</strong> from the Barrack title menu.</p>
-          <ol>
-            <li>Choose <strong>PlayStation</strong>, <strong>Xbox</strong> or <strong>Generic</strong>.</li>
-            <li>Select an action and press the controller button you want to assign.</li>
-            <li>Use <strong>Back</strong>, then <strong>Save</strong> in the main Setup dialog to keep the changes.</li>
-          </ol>
-          <p>Each profile has separate saved bindings. <strong>Restore Defaults</strong> resets the selected profile; <strong>Cancel</strong> in the main Setup dialog discards unsaved edits.</p>
-        </aside>
-      </div>
-      <p class="controller-compatibility"><strong>Compatibility:</strong> Requires macOS 11 or later and a controller recognized by Apple's GameController framework with an Extended Gamepad profile. Other compatible brands, such as some 8BitDo and Logitech controllers, use the Generic profile. Controllers without this profile are not supported by the gamepad input system. A controller is entirely optional.</p>
     </section>
 
     <section class="section history" id="history">
@@ -271,10 +211,7 @@
 
   <footer class="site-footer">
     <p><strong>Barrack</strong> · Modern port and reimplementation of the classic Macintosh game.</p>
-    <div class="footer-links">
-      <a href="https://github.com/ProfDrLuigi/BarrackGame/releases/latest" target="_blank" rel="noopener noreferrer">Download latest release</a>
-      <a href="#top">Back to top ↑</a>
-    </div>
+    <a href="#top">Back to top ↑</a>
   </footer>
 </body>
 </html>
